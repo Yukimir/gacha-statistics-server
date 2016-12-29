@@ -1,0 +1,10 @@
+node_modules
+images
+image/
+app
+release
+proxy.conf
+user.conf
+cache
+dist
+setting.conf
