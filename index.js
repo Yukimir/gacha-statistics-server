@@ -23,6 +23,16 @@ app.get('/',function(req,res,next){
     res.send('Yeah');
 });
 
+app.get('/version',function(req,res,next){
+    let obj = {
+        green:'1.0.0',
+        greenDetail:'第一个版本',
+        normal:'1.3.12',
+        normalDetail:'修正了数个Bug'
+    };
+    res.send(JSON.stringify(obj));
+});
+
 app.post('/record',function(req,res,next){
     //console.log(req);
     if(!req.body) {
